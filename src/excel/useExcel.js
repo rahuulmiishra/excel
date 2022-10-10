@@ -3,7 +3,7 @@ import clone from "just-clone";
 
 import { CellType } from "./constant";
 
-const GRID_SIZE = 21;
+const GRID_SIZE = 11;
 const STARTING_ASCII = 65;
 
 const TOOLTIP_WIDTH = 175;
