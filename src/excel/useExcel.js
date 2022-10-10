@@ -32,6 +32,8 @@ const useExcel = () => {
     return () => {
       document.removeEventListener("click", handleDocumentClick);
     };
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   function handleDocumentClick(e) {

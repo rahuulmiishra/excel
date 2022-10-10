@@ -44,7 +44,7 @@ const Cell = ({ value, type, id, outerIndex, innerIndex, onInput }) => {
   }
 };
 
-const HeaderCell = ({ value, outerIndex, innerIndex }) => {
+const HeaderCell = memo(({ value, outerIndex, innerIndex }) => {
   return (
     <div
       data-outer-index={outerIndex}
@@ -55,9 +55,9 @@ const HeaderCell = ({ value, outerIndex, innerIndex }) => {
       {value}
     </div>
   );
-};
+});
 
-const RowCell = ({ value, outerIndex, innerIndex }) => {
+const RowCell = memo(({ value, outerIndex, innerIndex }) => {
   return (
     <div
       data-outer-index={outerIndex}
@@ -68,10 +68,10 @@ const RowCell = ({ value, outerIndex, innerIndex }) => {
       {value}
     </div>
   );
-};
+});
 
-const DummyCell = () => {
+const DummyCell = memo(() => {
   return <div className="dummy-cell" />;
-};
+});
 
 export default memo(Cell);
