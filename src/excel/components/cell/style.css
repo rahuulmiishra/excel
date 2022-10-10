@@ -1,0 +1,44 @@
+.info-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-cell {
+    text-align: center;
+}
+
+.header-cell,
+.row-cell {
+    cursor: pointer;
+}
+
+.row-cell,
+.header-cell,
+.input-cell,
+.info-label {
+    height: 22px;
+}
+
+.row-cell,
+.dummy-cell {
+    width: 60px;
+    min-width: 60px;
+    text-align: center;
+}
+
+.input-cell {
+    padding: 4px;
+}
+
+.header-cell,
+.input-cell,
+.info-label {
+    width: 100px;
+    min-width: 100px;
+    box-sizing: border-box;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 1px;
+}
+
